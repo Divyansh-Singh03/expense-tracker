@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://expense-tracker-chi-five-92.vercel.app',
-  credentials: true
+  origin: '*',
 }));
 app.use(express.json());
 
